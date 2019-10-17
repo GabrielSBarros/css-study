@@ -1,0 +1,557 @@
+html, body {
+  height: 100%;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(165deg, #c8d6e5, #8395a7)
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div {
+  margin: 0 70px;
+}
+
+:root {
+  --invader-color: #222f3e;
+  --invader-animation-time: 1.33s;
+}
+.invader1 {
+  height: 5px;
+  width: 5px;
+  transition-duration: 0s;
+  animation: invader1 var(--invader-animation-time) steps(1) 0s infinite;
+}
+
+.invader2 {
+  height: 5px;
+  width: 5px;
+
+  animation: invader2 var(--invader-animation-time) steps(1) 0s infinite;
+}
+
+.invader3{
+  height: 5px;
+  width: 5px;
+  animation: invader3 var(--invader-animation-time) steps(1) 0s infinite;
+}
+
+.invader4{
+  height: 5px;
+  width: 5px;
+  animation: invader4 var(--invader-animation-time) steps(1) 0s infinite;
+}
+
+@keyframes invader4 {
+  0% {
+    box-shadow:
+    -10px 5px 0 0 var(--invader-color),
+    -5px 5px 0 0 var(--invader-color),
+    0px 5px 0 0 var(--invader-color),
+    5px 5px 0 0 var(--invader-color),
+
+    -25px 10px 0 0 var(--invader-color),
+    -20px 10px 0 0 var(--invader-color),
+    -15px 10px 0 0 var(--invader-color),
+    -10px 10px 0 0 var(--invader-color),
+    -5px 10px 0 0 var(--invader-color),
+    0px 10px 0 0 var(--invader-color),
+    5px 10px 0 0 var(--invader-color),
+    10px 10px 0 0 var(--invader-color),
+    15px 10px 0 0 var(--invader-color),
+    20px 10px 0 0 var(--invader-color),
+
+    -30px 15px 0 0 var(--invader-color),
+    -25px 15px 0 0 var(--invader-color),
+    -20px 15px 0 0 var(--invader-color),
+    -15px 15px 0 0 var(--invader-color),
+    -10px 15px 0 0 var(--invader-color),
+    -5px 15px 0 0 var(--invader-color),
+    0px 15px 0 0 var(--invader-color),
+    5px 15px 0 0 var(--invader-color),
+    10px 15px 0 0 var(--invader-color),
+    15px 15px 0 0 var(--invader-color),
+    20px 15px 0 0 var(--invader-color),
+    25px 15px 0 0 var(--invader-color),
+
+    -30px 20px 0 0 var(--invader-color),
+    -25px 20px 0 0 var(--invader-color),
+    -20px 20px 0 0 var(--invader-color),
+    -5px 20px 0 0 var(--invader-color),
+    0px 20px 0 0 var(--invader-color),
+    15px 20px 0 0 var(--invader-color),
+    20px 20px 0 0 var(--invader-color),
+    25px 20px 0 0 var(--invader-color),
+
+    -30px 25px 0 0 var(--invader-color),
+    -25px 25px 0 0 var(--invader-color),
+    -20px 25px 0 0 var(--invader-color),
+    -15px 25px 0 0 var(--invader-color),
+    -10px 25px 0 0 var(--invader-color),
+    -5px 25px 0 0 var(--invader-color),
+    0px 25px 0 0 var(--invader-color),
+    5px 25px 0 0 var(--invader-color),
+    10px 25px 0 0 var(--invader-color),
+    15px 25px 0 0 var(--invader-color),
+    20px 25px 0 0 var(--invader-color),
+    25px 25px 0 0 var(--invader-color),
+
+    -20px 30px 0 0 var(--invader-color),
+    -15px 30px 0 0 var(--invader-color),
+    -10px 30px 0 0 var(--invader-color),
+    5px 30px 0 0 var(--invader-color),
+    10px 30px 0 0 var(--invader-color),
+    15px 30px 0 0 var(--invader-color),
+
+    -25px 35px 0 0 var(--invader-color),
+    -20px 35px 0 0 var(--invader-color),
+    -5px 35px 0 0 var(--invader-color),
+    0px 35px 0 0 var(--invader-color),
+    15px 35px 0 0 var(--invader-color),
+    20px 35px 0 0 var(--invader-color),
+
+    -20px 40px 0 0 var(--invader-color),
+    -15px 40px 0 0 var(--invader-color),
+    10px 40px 0 0 var(--invader-color),
+    15px 40px 0 0 var(--invader-color);
+  }
+
+  50% {
+    box-shadow:
+    -10px 10px 0 0 var(--invader-color),
+    -5px 10px 0 0 var(--invader-color),
+    0px 10px 0 0 var(--invader-color),
+    5px 10px 0 0 var(--invader-color),
+
+    -25px 15px 0 0 var(--invader-color),
+    -20px 15px 0 0 var(--invader-color),
+    -15px 15px 0 0 var(--invader-color),
+    -10px 15px 0 0 var(--invader-color),
+    -5px 15px 0 0 var(--invader-color),
+    0px 15px 0 0 var(--invader-color),
+    5px 15px 0 0 var(--invader-color),
+    10px 15px 0 0 var(--invader-color),
+    15px 15px 0 0 var(--invader-color),
+    20px 15px 0 0 var(--invader-color),
+
+    -30px 20px 0 0 var(--invader-color),
+    -25px 20px 0 0 var(--invader-color),
+    -20px 20px 0 0 var(--invader-color),
+    -15px 20px 0 0 var(--invader-color),
+    -10px 20px 0 0 var(--invader-color),
+    -5px 20px 0 0 var(--invader-color),
+    0px 20px 0 0 var(--invader-color),
+    5px 20px 0 0 var(--invader-color),
+    10px 20px 0 0 var(--invader-color),
+    15px 20px 0 0 var(--invader-color),
+    20px 20px 0 0 var(--invader-color),
+    25px 20px 0 0 var(--invader-color),
+
+    -30px 25px 0 0 var(--invader-color),
+    -25px 25px 0 0 var(--invader-color),
+    -20px 25px 0 0 var(--invader-color),
+    -5px 25px 0 0 var(--invader-color),
+    0px 25px 0 0 var(--invader-color),
+    15px 25px 0 0 var(--invader-color),
+    20px 25px 0 0 var(--invader-color),
+    25px 25px 0 0 var(--invader-color),
+
+    -30px 30px 0 0 var(--invader-color),
+    -25px 30px 0 0 var(--invader-color),
+    -20px 30px 0 0 var(--invader-color),
+    -15px 30px 0 0 var(--invader-color),
+    -10px 30px 0 0 var(--invader-color),
+    -5px 30px 0 0 var(--invader-color),
+    0px 30px 0 0 var(--invader-color),
+    5px 30px 0 0 var(--invader-color),
+    10px 30px 0 0 var(--invader-color),
+    15px 30px 0 0 var(--invader-color),
+    20px 30px 0 0 var(--invader-color),
+    25px 30px 0 0 var(--invader-color),
+
+    -15px 35px 0 0 var(--invader-color),
+    -10px 35px 0 0 var(--invader-color),
+    5px 35px 0 0 var(--invader-color),
+    10px 35px 0 0 var(--invader-color),
+
+    -20px 40px 0 0 var(--invader-color),
+    -15px 40px 0 0 var(--invader-color),
+    -5px 40px 0 0 var(--invader-color),
+    0px 40px 0 0 var(--invader-color),
+    10px 40px 0 0 var(--invader-color),
+    15px 40px 0 0 var(--invader-color),
+
+    -30px 45px 0 0 var(--invader-color),
+    -25px 45px 0 0 var(--invader-color),
+    20px 45px 0 0 var(--invader-color),
+    25px 45px 0 0 var(--invader-color);
+  }
+}
+
+@keyframes invader3 {
+    0%{
+      box-shadow:
+      -15px 5px 0 0 var(--invader-color),
+      -10px 5px 0 0 var(--invader-color),
+      -5px 5px 0 0 var(--invader-color),
+      0px 5px 0 0 var(--invader-color),
+      5px 5px 0 0 var(--invader-color),
+      10px 5px 0 0 var(--invader-color),
+
+      -25px 10px 0 0 var(--invader-color),
+      -20px 10px 0 0 var(--invader-color),
+      -15px 10px 0 0 var(--invader-color),
+      -10px 10px 0 0 var(--invader-color),
+      -5px 10px 0 0 var(--invader-color),
+      0px 10px 0 0 var(--invader-color),
+      5px 10px 0 0 var(--invader-color),
+      10px 10px 0 0 var(--invader-color),
+      15px 10px 0 0 var(--invader-color),
+      20px 10px 0 0 var(--invader-color),
+
+      -30px 15px 0 0 var(--invader-color),
+      -25px 15px 0 0 var(--invader-color),
+      -20px 15px 0 0 var(--invader-color),
+      -15px 15px 0 0 var(--invader-color),
+      -10px 15px 0 0 var(--invader-color),
+      -5px 15px 0 0 var(--invader-color),
+      0px 15px 0 0 var(--invader-color),
+      5px 15px 0 0 var(--invader-color),
+      10px 15px 0 0 var(--invader-color),
+      15px 15px 0 0 var(--invader-color),
+      20px 15px 0 0 var(--invader-color),
+      25px 15px 0 0 var(--invader-color),
+
+      -35px 20px 0 0 var(--invader-color),
+      -30px 20px 0 0 var(--invader-color),
+      -20px 20px 0 0 var(--invader-color),
+      -15px 20px 0 0 var(--invader-color),
+      -5px 20px 0 0 var(--invader-color),
+      0px 20px 0 0 var(--invader-color),
+      10px 20px 0 0 var(--invader-color),
+      15px 20px 0 0 var(--invader-color),
+      25px 20px 0 0 var(--invader-color),
+      30px 20px 0 0 var(--invader-color),
+
+      -40px 25px 0 0 var(--invader-color),
+      -35px 25px 0 0 var(--invader-color),
+      -30px 25px 0 0 var(--invader-color),
+      -25px 25px 0 0 var(--invader-color),
+      -20px 25px 0 0 var(--invader-color),
+      -15px 25px 0 0 var(--invader-color),
+      -10px 25px 0 0 var(--invader-color),
+      -5px 25px 0 0 var(--invader-color),
+      0px 25px 0 0 var(--invader-color),
+      5px 25px 0 0 var(--invader-color),
+      10px 25px 0 0 var(--invader-color),
+      15px 25px 0 0 var(--invader-color),
+      20px 25px 0 0 var(--invader-color),
+      25px 25px 0 0 var(--invader-color),
+      30px 25px 0 0 var(--invader-color),
+      35px 25px 0 0 var(--invader-color),
+
+      -30px 30px 0 0 var(--invader-color),
+      -25px 30px 0 0 var(--invader-color),
+      -20px 30px 0 0 var(--invader-color),
+      -5px 30px 0 0 var(--invader-color),
+      0px 30px 0 0 var(--invader-color),
+      15px 30px 0 0 var(--invader-color),
+      20px 30px 0 0 var(--invader-color),
+      25px 30px 0 0 var(--invader-color),
+
+      -25px 35px 0 0 var(--invader-color),
+      20px 35px 0 0 var(--invader-color);
+    }
+    50%{
+      box-shadow:
+      -15px 10px 0 0 var(--invader-color),
+      -10px 10px 0 0 var(--invader-color),
+      -5px 10px 0 0 var(--invader-color),
+      0px 10px 0 0 var(--invader-color),
+      5px 10px 0 0 var(--invader-color),
+      10px 10px 0 0 var(--invader-color),
+
+      -25px 15px 0 0 var(--invader-color),
+      -20px 15px 0 0 var(--invader-color),
+      -15px 15px 0 0 var(--invader-color),
+      -10px 15px 0 0 var(--invader-color),
+      -5px 15px 0 0 var(--invader-color),
+      0px 15px 0 0 var(--invader-color),
+      5px 15px 0 0 var(--invader-color),
+      10px 15px 0 0 var(--invader-color),
+      15px 15px 0 0 var(--invader-color),
+      20px 15px 0 0 var(--invader-color),
+
+      -30px 20px 0 0 var(--invader-color),
+      -25px 20px 0 0 var(--invader-color),
+      -20px 20px 0 0 var(--invader-color),
+      -15px 20px 0 0 var(--invader-color),
+      -10px 20px 0 0 var(--invader-color),
+      -5px 20px 0 0 var(--invader-color),
+      0px 20px 0 0 var(--invader-color),
+      5px 20px 0 0 var(--invader-color),
+      10px 20px 0 0 var(--invader-color),
+      15px 20px 0 0 var(--invader-color),
+      20px 20px 0 0 var(--invader-color),
+      25px 20px 0 0 var(--invader-color),
+
+      -35px 25px 0 0 var(--invader-color),
+      -30px 25px 0 0 var(--invader-color),
+      -20px 25px 0 0 var(--invader-color),
+      -15px 25px 0 0 var(--invader-color),
+      -5px 25px 0 0 var(--invader-color),
+      0px 25px 0 0 var(--invader-color),
+      10px 25px 0 0 var(--invader-color),
+      15px 25px 0 0 var(--invader-color),
+      25px 25px 0 0 var(--invader-color),
+      30px 25px 0 0 var(--invader-color),
+
+      -40px 30px 0 0 var(--invader-color),
+      -35px 30px 0 0 var(--invader-color),
+      -30px 30px 0 0 var(--invader-color),
+      -25px 30px 0 0 var(--invader-color),
+      -20px 30px 0 0 var(--invader-color),
+      -15px 30px 0 0 var(--invader-color),
+      -10px 30px 0 0 var(--invader-color),
+      -5px 30px 0 0 var(--invader-color),
+      0px 30px 0 0 var(--invader-color),
+      5px 30px 0 0 var(--invader-color),
+      10px 30px 0 0 var(--invader-color),
+      15px 30px 0 0 var(--invader-color),
+      20px 30px 0 0 var(--invader-color),
+      25px 30px 0 0 var(--invader-color),
+      30px 30px 0 0 var(--invader-color),
+      35px 30px 0 0 var(--invader-color),
+
+      -30px 35px 0 0 var(--invader-color),
+      -25px 35px 0 0 var(--invader-color),
+      -20px 35px 0 0 var(--invader-color),
+      -5px 35px 0 0 var(--invader-color),
+      0px 35px 0 0 var(--invader-color),
+      15px 35px 0 0 var(--invader-color),
+      20px 35px 0 0 var(--invader-color),
+      25px 35px 0 0 var(--invader-color),
+
+      -25px 40px 0 0 var(--invader-color),
+      20px 40px 0 0 var(--invader-color);
+    }
+}
+
+@keyframes invader2 {
+    0%{
+      box-shadow:
+        -5px 5px 0 0 var(--invader-color),
+        0px 5px 0 0 var(--invader-color),
+
+        -10px 10px 0 0 var(--invader-color),
+        -5px 10px 0 0 var(--invader-color),
+        0px 10px 0 0 var(--invader-color),
+        5px 10px 0 0 var(--invader-color),
+
+        -15px 15px 0 0 var(--invader-color),
+        -10px 15px 0 0 var(--invader-color),
+        -5px 15px 0 0 var(--invader-color),
+        0px 15px 0 0 var(--invader-color),
+        5px 15px 0 0 var(--invader-color),
+        10px 15px 0 0 var(--invader-color),
+
+        -20px 20px 0 0 var(--invader-color),
+        -15px 20px 0 0 var(--invader-color),
+        -5px 20px 0 0 var(--invader-color),
+        0px 20px 0 0 var(--invader-color),
+        10px 20px 0 0 var(--invader-color),
+        15px 20px 0 0 var(--invader-color),
+
+        -20px 25px 0 0 var(--invader-color),
+        -15px 25px 0 0 var(--invader-color),
+        -10px 25px 0 0 var(--invader-color),
+        -5px 25px 0 0 var(--invader-color),
+        0px 25px 0 0 var(--invader-color),
+        5px 25px 0 0 var(--invader-color),
+        10px 25px 0 0 var(--invader-color),
+        15px 25px 0 0 var(--invader-color),
+
+        -15px 30px 0 0 var(--invader-color),
+        -5px 30px 0 0 var(--invader-color),
+        0px 30px 0 0 var(--invader-color),
+        10px 30px 0 0 var(--invader-color),
+
+        -20px 35px 0 0 var(--invader-color),
+        15px 35px 0 0 var(--invader-color),
+
+        -15px 40px 0 0 var(--invader-color),
+        10px 40px 0 0 var(--invader-color);
+    }
+
+    50%{
+      box-shadow:
+        -5px 10px 0 0 var(--invader-color),
+        0px 10px 0 0 var(--invader-color),
+
+        -10px 15px 0 0 var(--invader-color),
+        -5px 15px 0 0 var(--invader-color),
+        0px 15px 0 0 var(--invader-color),
+        5px 15px 0 0 var(--invader-color),
+
+        -15px 20px 0 0 var(--invader-color),
+        -10px 20px 0 0 var(--invader-color),
+        -5px 20px 0 0 var(--invader-color),
+        0px 20px 0 0 var(--invader-color),
+        5px 20px 0 0 var(--invader-color),
+        10px 20px 0 0 var(--invader-color),
+
+        -20px 25px 0 0 var(--invader-color),
+        -15px 25px 0 0 var(--invader-color),
+        -5px 25px 0 0 var(--invader-color),
+        0px 25px 0 0 var(--invader-color),
+        10px 25px 0 0 var(--invader-color),
+        15px 25px 0 0 var(--invader-color),
+
+        -20px 30px 0 0 var(--invader-color),
+        -15px 30px 0 0 var(--invader-color),
+        -10px 30px 0 0 var(--invader-color),
+        -5px 30px 0 0 var(--invader-color),
+        0px 30px 0 0 var(--invader-color),
+        5px 30px 0 0 var(--invader-color),
+        10px 30px 0 0 var(--invader-color),
+        15px 30px 0 0 var(--invader-color),
+
+        -10px 35px 0 0 var(--invader-color),
+        5px 35px 0 0 var(--invader-color),
+
+        -15px 40px 0 0 var(--invader-color),
+        -5px 40px 0 0 var(--invader-color),
+        0px 40px 0 0 var(--invader-color),
+        10px 40px 0 0 var(--invader-color),
+
+        -20px 45px 0 0 var(--invader-color),
+        -10px 45px 0 0 var(--invader-color),
+        5px 45px 0 0 var(--invader-color),
+        15px 45px 0 0 var(--invader-color);
+    }
+}
+
+@keyframes invader1 {
+    0% {
+      box-shadow:
+        -15px 5px 0 0 var(--invader-color),
+        15px 5px 0 0 var(--invader-color),
+
+        -10px 10px 0 0 var(--invader-color),
+        10px 10px 0 0 var(--invader-color),
+
+        -15px 15px 0 0 var(--invader-color),
+        -10px 15px 0 0 var(--invader-color),
+        -5px 15px 0 0 var(--invader-color),
+        0px 15px 0 0 var(--invader-color),
+        5px 15px 0 0 var(--invader-color),
+        10px 15px 0 0 var(--invader-color),
+        15px 15px 0 0 var(--invader-color),
+
+        -20px 20px 0 0 var(--invader-color),
+        -15px 20px 0 0 var(--invader-color),
+        -5px 20px 0 0 var(--invader-color),
+        0px 20px 0 0 var(--invader-color),
+        5px 20px 0 0 var(--invader-color),
+        15px 20px 0 0 var(--invader-color),
+        20px 20px 0 0 var(--invader-color),
+
+        -25px 25px 0 0 var(--invader-color),
+        -20px 25px 0 0 var(--invader-color),
+        -15px 25px 0 0 var(--invader-color),
+        -10px 25px 0 0 var(--invader-color),
+        -5px 25px 0 0 var(--invader-color),
+        0px 25px 0 0 var(--invader-color),
+        5px 25px 0 0 var(--invader-color),
+        10px 25px 0 0 var(--invader-color),
+        15px 25px 0 0 var(--invader-color),
+        20px 25px 0 0 var(--invader-color),
+        25px 25px 0 0 var(--invader-color),
+
+        -25px 30px 0 0 var(--invader-color),
+        -15px 30px 0 0 var(--invader-color),
+        -5px 30px 0 0 var(--invader-color),
+        -10px 30px 0 0 var(--invader-color),
+        0px 30px 0 0 var(--invader-color),
+        5px 30px 0 0 var(--invader-color),
+        10px 30px 0 0 var(--invader-color),
+        15px 30px 0 0 var(--invader-color),
+        25px 30px 0 0 var(--invader-color),
+
+        -25px 35px 0 0 var(--invader-color),
+        -15px 35px 0 0 var(--invader-color),
+        15px 35px 0 0 var(--invader-color),
+        25px 35px 0 0 var(--invader-color),
+
+        -10px 40px 0 0 var(--invader-color),
+        -5px 40px 0 0 var(--invader-color),
+        5px 40px 0 0 var(--invader-color),
+        10px 40px 0 0 var(--invader-color);
+  }
+  50% {
+    box-shadow:
+      -15px 10px 0 0 var(--invader-color),
+      15px 10px 0 0 var(--invader-color),
+
+      -25px 15px 0 0 var(--invader-color),
+      -10px 15px 0 0 var(--invader-color),
+      10px 15px 0 0 var(--invader-color),
+      25px 15px 0 0 var(--invader-color),
+
+      -25px 20px 0 0 var(--invader-color),
+      -15px 20px 0 0 var(--invader-color),
+      -10px 20px 0 0 var(--invader-color),
+      -5px 20px 0 0 var(--invader-color),
+      0px 20px 0 0 var(--invader-color),
+      5px 20px 0 0 var(--invader-color),
+      10px 20px 0 0 var(--invader-color),
+      15px 20px 0 0 var(--invader-color),
+      25px 20px 0 0 var(--invader-color),
+
+      -25px 25px 0 0 var(--invader-color),
+      -20px 25px 0 0 var(--invader-color),
+      -15px 25px 0 0 var(--invader-color),
+      -5px 25px 0 0 var(--invader-color),
+      0px 25px 0 0 var(--invader-color),
+      5px 25px 0 0 var(--invader-color),
+      15px 25px 0 0 var(--invader-color),
+      20px 25px 0 0 var(--invader-color),
+      25px 25px 0 0 var(--invader-color),
+
+      -25px 30px 0 0 var(--invader-color),
+      -20px 30px 0 0 var(--invader-color),
+      -15px 30px 0 0 var(--invader-color),
+      -5px 30px 0 0 var(--invader-color),
+      -10px 30px 0 0 var(--invader-color),
+      0px 30px 0 0 var(--invader-color),
+      5px 30px 0 0 var(--invader-color),
+      10px 30px 0 0 var(--invader-color),
+      15px 30px 0 0 var(--invader-color),
+      20px 30px 0 0 var(--invader-color),
+      25px 30px 0 0 var(--invader-color),
+
+      -20px 35px 0 0 var(--invader-color),
+      -15px 35px 0 0 var(--invader-color),
+      -5px 35px 0 0 var(--invader-color),
+      -10px 35px 0 0 var(--invader-color),
+      0px 35px 0 0 var(--invader-color),
+      5px 35px 0 0 var(--invader-color),
+      10px 35px 0 0 var(--invader-color),
+      15px 35px 0 0 var(--invader-color),
+      20px 35px 0 0 var(--invader-color),
+
+      -10px 40px 0 0 var(--invader-color),
+      10px 40px 0 0 var(--invader-color),
+
+      -15px 45px 0 0 var(--invader-color),
+      15px 45px 0 0 var(--invader-color);
+  }
+}
